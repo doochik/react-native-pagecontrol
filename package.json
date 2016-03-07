@@ -1,0 +1,27 @@
+{
+  "name": "react-native-pagecontrol",
+  "version": "1.0.0",
+  "description": "React Native binding to the iOS UIPageControl.",
+  "main": "PageControlIOS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doochik/react-native-pagecontrol.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios"
+  ],
+  "author": {
+    "name": "Aleksei Androsov",
+    "url": "https://github.com/doochik"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doochik/react-native-pagecontrol/issues"
+  },
+  "homepage": "https://github.com/doochik/react-native-pagecontrol#readme"
+}
