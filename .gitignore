@@ -3,6 +3,11 @@
 node_modules/
 npm-debug.log
 
+# Xcode
+#
+**/xcuserdata
+**/project.xcworkspace
+
 # WebStorm
 #
 .idea
