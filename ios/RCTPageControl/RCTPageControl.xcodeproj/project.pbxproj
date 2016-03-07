@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13BE3DEE1AC21097009241FE /* RCTPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* RCTPageControl.m */; };
+		590E9BA81C8E038F007EDDE8 /* RCTPageControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 590E9BA71C8E038F007EDDE8 /* RCTPageControlManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		134814201AA4EA6300B7C361 /* libRCTPageControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTPageControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3DEC1AC21097009241FE /* RCTPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPageControl.h; sourceTree = "<group>"; };
 		13BE3DED1AC21097009241FE /* RCTPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTPageControl.m; sourceTree = "<group>"; };
+		590E9BA61C8E038F007EDDE8 /* RCTPageControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPageControlManager.h; sourceTree = "<group>"; };
+		590E9BA71C8E038F007EDDE8 /* RCTPageControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTPageControlManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 			children = (
 				13BE3DEC1AC21097009241FE /* RCTPageControl.h */,
 				13BE3DED1AC21097009241FE /* RCTPageControl.m */,
+				590E9BA61C8E038F007EDDE8 /* RCTPageControlManager.h */,
+				590E9BA71C8E038F007EDDE8 /* RCTPageControlManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590E9BA81C8E038F007EDDE8 /* RCTPageControlManager.m in Sources */,
 				13BE3DEE1AC21097009241FE /* RCTPageControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,9 +204,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../React/**",
-					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -214,8 +218,7 @@
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../../../react-native/React/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
