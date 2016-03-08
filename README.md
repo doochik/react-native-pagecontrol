@@ -20,3 +20,22 @@ Supported properties:
 * `onValueChange` (function) - Callback that is called when the user taps a PageControl; passes the currentPage value as an argument 
 
 ## Example
+
+```js
+import PageControlIOS from 'react-native-pagecontrol';
+
+class MyComponent extends React.Component {
+    render() {
+        <PageControlIOS
+            currentPage={this.state.currentPage}
+            numberOfPages={4}
+            pageIndicatorTintColor="grey"
+            currentPageIndicatorTintColor="rgb(200,200,0)"
+            
+            onValueChange={this._onPageControlValueChange}
+        />
+    }
+}
+```
+
+Also you can find more complex example how to connect ScrollView and PageControlIOS in [example project](./example/PageControlIOSExample/index.ios.js)
