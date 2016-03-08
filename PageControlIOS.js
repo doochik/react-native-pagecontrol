@@ -5,14 +5,16 @@
 
 const React = require('react-native');
 const {
+    Component,
     Dimensions,
     NativeModules,
     requireNativeComponent,
     PropTypes,
-    StyleSheet
+    StyleSheet,
+    View
 } = React;
 
-class PageControlIOS extends React.Component {
+class PageControlIOS extends Component {
 
     constructor(props) {
         super(props);
@@ -24,19 +26,25 @@ class PageControlIOS extends React.Component {
         return (
             <RCTPageControl
                 {...this.props}
-                style={[styles.PageControlIOS, this.props.style]}
                 onChange={this._onChange}
+                style={[styles.PageControlIOS, this.props.style]}
             />
         );
     }
 
+    /**
+     * Handle PageControl change event
+     * @param {Event} event
+     * @private
+     */
     _onChange(event) {
         this.props.onChange && this.props.onChange(event);
         this.props.onValueChange && this.props.onValueChange(event.nativeEvent.currentPage);
     }
 }
+
 PageControlIOS.propTypes = {
-    ...React.View.propTypes,
+    ...View.propTypes,
 
     /**
      * The current page, shown by the receiver as a white dot.
@@ -78,7 +86,7 @@ PageControlIOS.propTypes = {
 
 const styles = StyleSheet.create({
     PageControlIOS: {
-        height: NativeModules.SegmentedControlManager.ComponentHeight,
+        height: NativeModules.PageControlManager.ComponentHeight,
         width: Dimensions.get('window').width
     }
 });
