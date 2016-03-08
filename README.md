@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/yandex-ui/noscript.svg?branch=master)](https://travis-ci.org/yandex-ui/noscript)
+[![NPM version](https://badge.fury.io/js/noscript.svg)](http://badge.fury.io/js/noscript)
+[![Dependency Status](https://david-dm.org/yandex-ui/noscript.svg)](https://david-dm.org/yandex-ui/noscript)
+
 # react-native-pagecontrol
 React Native binding to the iOS [UIPageControl](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPageControl_Class/index.html).
 
