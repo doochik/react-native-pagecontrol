@@ -38,4 +38,4 @@ class MyComponent extends React.Component {
 }
 ```
 
-Also you can find more complex example how to connect ScrollView and PageControlIOS in [example project](./example/PageControlIOSExample/index.ios.js)
+Also you can find more complex example and how to connect ScrollView and PageControlIOS in [example project](./example/PageControlIOSExample/index.ios.js)
