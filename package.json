@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/doochik/react-native-pagecontrol/issues"
   },
-  "homepage": "https://github.com/doochik/react-native-pagecontrol#readme"
+  "homepage": "https://github.com/doochik/react-native-pagecontrol#readme",
+  "peerDependencies": {
+    "react-native": ">=0.18"
+  }
 }
