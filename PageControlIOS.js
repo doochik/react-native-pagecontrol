@@ -3,8 +3,7 @@
  * @providesModule PageControlIOS
  */
 
-const React = require('react-native');
-const {
+import React, {
     Component,
     Dimensions,
     NativeModules,
@@ -12,7 +11,7 @@ const {
     PropTypes,
     StyleSheet,
     View
-} = React;
+} from 'react-native';
 
 class PageControlIOS extends Component {
 
