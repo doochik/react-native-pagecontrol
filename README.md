@@ -28,6 +28,15 @@ Supported properties:
 import PageControlIOS from 'react-native-pagecontrol';
 
 class MyComponent extends React.Component {
+    
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+            currentPage: 0
+        };
+    }
+
     render() {
         <PageControlIOS
             currentPage={this.state.currentPage}
