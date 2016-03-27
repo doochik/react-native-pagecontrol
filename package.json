@@ -2,7 +2,7 @@
   "name": "react-native-pagecontrol",
   "version": "1.0.0",
   "description": "React Native binding to the iOS UIPageControl.",
-  "main": "PageControlIOS.js",
+  "main": "PageControlIOS",
   "scripts": {
     "test": "eslint ."
   },
