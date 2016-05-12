@@ -4,12 +4,11 @@
  * @providesModule PageControlIOS
  */
 
-import React, {
-    Component,
+import React, {Component, PropTypes} from 'react';
+import {
     Dimensions,
     NativeModules,
     requireNativeComponent,
-    PropTypes,
     StyleSheet,
     View
 } from 'react-native';
@@ -93,4 +92,4 @@ const styles = StyleSheet.create({
 
 const RCTPageControl = requireNativeComponent('RCTPageControl', PageControlIOS);
 
-module.exports = PageControlIOS;
+export default PageControlIOS;

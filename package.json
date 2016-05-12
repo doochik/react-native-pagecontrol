@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/doochik/react-native-pagecontrol#readme",
   "peerDependencies": {
-    "react-native": ">=0.18"
+    "react-native": ">=0.25"
   },
   "devDependencies": {
     "eslint": "^2.3.0",

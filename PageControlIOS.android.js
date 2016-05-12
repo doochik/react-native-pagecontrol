@@ -4,7 +4,7 @@
  * @providesModule PageControlIOS
  */
 
-import React from 'react-native';
+import React from 'react';
 
 class PageControlIOS extends React.Component {
 
@@ -14,4 +14,4 @@ class PageControlIOS extends React.Component {
 
 }
 
-module.exports = PageControlIOS;
+export default PageControlIOS;
