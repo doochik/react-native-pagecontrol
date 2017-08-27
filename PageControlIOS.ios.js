@@ -10,7 +10,7 @@ import {
     NativeModules,
     requireNativeComponent,
     StyleSheet,
-    View
+    View,
 } from 'react-native';
 
 class PageControlIOS extends Component {
@@ -80,14 +80,14 @@ PageControlIOS.propTypes = {
      * Callback that is called when the user taps a PageControl;
      * passes the currentPage value as an argument
      */
-    onValueChange: PropTypes.func
+    onValueChange: PropTypes.func,
 };
 
 const styles = StyleSheet.create({
     PageControlIOS: {
         height: NativeModules.PageControlManager.ComponentHeight,
-        width: Dimensions.get('window').width
-    }
+        width: Dimensions.get('window').width,
+    },
 });
 
 const RCTPageControl = requireNativeComponent('RCTPageControl', PageControlIOS);

@@ -1,6 +1,7 @@
 {
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "rules": {
+      "comma-dangle": ["error", "always-multiline"],
         "indent": [
             2,
             4,
