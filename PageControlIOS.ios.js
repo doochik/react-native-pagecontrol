@@ -4,16 +4,17 @@
  * @providesModule PageControlIOS
  */
 
-import React, {Component, PropTypes} from 'react';
+import React from 'react';
 import {
     Dimensions,
     NativeModules,
     requireNativeComponent,
     StyleSheet,
-    View,
+    ViewPropTypes,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
-class PageControlIOS extends Component {
+class PageControlIOS extends React.PureComponent {
 
     constructor(props) {
         super(props);
@@ -43,7 +44,7 @@ class PageControlIOS extends Component {
 }
 
 PageControlIOS.propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
 
     /**
      * The current page, shown by the receiver as a white dot.
