@@ -10,9 +10,9 @@ RCT_EXPORT_MODULE()
   return [RCTPageControl new];
 }
 
-- (dispatch_queue_t)methodQueue
++ (BOOL)requiresMainQueueSetup
 {
-  return dispatch_get_main_queue();
+    return YES;
 }
 
 RCT_EXPORT_VIEW_PROPERTY(currentPage, NSInteger)
